@@ -1,0 +1,13 @@
+# elasticsearch.yml
+# /usr/share/elasticsearch/config/elasticsearch.yml
+#cluster.name: "docker-cluster"
+#network.host: 0.0.0.0
+
+#替换配置信息
+http.cors.allow-headers: Authorization
+http.host: 0.0.0.0
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+#新增加了以下两行配置
+#xpack.security.enabled: true
+#xpack.security.transport.ssl.enabled: false

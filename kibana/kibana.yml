@@ -1,0 +1,11 @@
+# /usr/share/kibana/config/kibana.yml
+
+#
+# ** THIS IS AN AUTO-GENERATED FILE **
+#
+
+# Default Kibana configuration for docker target
+# 设置为中文
+i18n.locale: "zh-CN"
+#dateFormat: "YYYY-MM-DD HH:mm:ss"
+#dateFormat:tz: "UTC"
