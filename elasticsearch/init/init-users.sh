@@ -23,7 +23,7 @@ if [ "$USER_EXISTS" -eq 200 ]; then
      -d "{
       \"password\" : \"${KIBANA_PASSWORD}\"
     }"
-  echo "创建 Kibana 用户完成。"
+  echo "修改 Kibana 用户密码完成。"
 else
   echo "用户 ${KIBANA_USER} 已经存在，跳过创建。"
 fi
