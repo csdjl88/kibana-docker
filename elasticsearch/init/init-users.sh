@@ -15,7 +15,7 @@ done
 
 # 检查用户是否已经存在
 USER_EXISTS=$(curl -u "elastic:${ELASTIC_PASSWORD}" -X GET "http://localhost:9200/_security/user/${KIBANA_USER}" -o /dev/null -w '%{http_code}' -s)
-
+echo $USER_EXISTS
 if [ "$USER_EXISTS" -eq 200 ]; then
   # 创建 Kibana 用户
   curl -u "elastic:${ELASTIC_PASSWORD}" -X POST "http://localhost:9200/_security/user/${KIBANA_USER}/_password" \
